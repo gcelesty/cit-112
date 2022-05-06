@@ -77,7 +77,7 @@ Week 02
 
 3.3 Display a long listing of all the files, including hidden files, in your home directory
 
-// ls ~ -l -a
+// ls -l -a
 
 3.4 What type (e.g. symbolic link, ASCII text, directory, etc.) of file is /etc/passwd?
 

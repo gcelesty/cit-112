@@ -1,0 +1,153 @@
+1.1	From your home directory check what groups you are a part of 
+
+id 
+
+
+1.2 From your home directory create a Day5 directory, and change your working directory to that Day5 directory. Create a new file called test1 in your Day5 directory.
+Please write your command for making your test1 file in the space below.
+
+touch test1
+
+
+1.3 From your Day5 directory, check the base permissions of test1. Write the command you used in the space below. 
+
+
+ls -l
+
+
+
+1.4 From your Day5 directory add execute permission to the user and add write permission to others on test1 
+
+chmod 600 test1
+
+
+
+1.5 From your Day5 directory change the permission of test1 to read only for user, group, and others 
+
+chmod a=r test1
+
+
+1.6 From your Day5 directory change the permission of test1 to full control to user, read and execute to group and read and execute to others using mode values
+
+chmod 755 test1
+
+
+
+1.7 Display the setting for the default file permission when creating a new file. Write the command you used in the space below.
+
+umask 
+
+1.8 Switch to the root user without logging out of your account. Write the command you used in the space below.
+
+sudo -i 
+
+
+
+1.9 Exit out of the root user and return to the user. Write the command you used in the space below.
+
+exit 
+
+
+
+1.10 From your Day5 directory, display the content of the file "/etc/ppp/chap-secrets" without switching to the root user shell. (Use an absolute path to the file) Write the command you used in the space below.
+
+sudo less /etc/ppp/chap-secrets
+
+
+
+1.11 From your Day5 directory, change the owner and group of the test1 file to the root user (Do not switch to a root shell)
+
+
+sudo chown root: test1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2.1 Display all processes started from the current terminal
+
+ps
+
+
+2.2 Display all processes running in the system including ones started by other users 
+
+ps x
+
+
+2.3 Start the process xeyes in the foreground (to start xeyes type xeyes) 
+
+xeyes 
+
+
+2.4 Suspend xeyes (What keystrokes did you use?)
+
+Ctrl z
+
+
+2.5 List the suspended and background jobs. Write the command you used in the space below.
+
+jobs
+
+
+
+2.6 Bring xeyes to the foreground. Write the command you used in the space below. 
+
+fg %1
+
+
+
+
+2.7 Suspend xeyes again. Then move xeyes to the background. Write the command you used to send xeyes to the background in the space below. 
+
+bg %1
+
+
+
+
+
+
+
+2.8 Fill in the blank below to complete the command to send the absolute kill signal to xeyes.
+kill ____ <pid>
+In the space below, enter the command option to send the absolute kill signal.  Do not include kill or <pid> in your response.
+
+9
+
+2.9 Start 3 xeyes instances in the background. In the space below write how you started one instance of xeyes in the background 
+
+xeyes & 
+
+
+
+2.10 Kill all xeyes you started in the above step in one command without any options.
+
+killall xeyes
+
+
+2.11 Display a dynamic real-time view of the processes running on the system. Write the command you used in the space provided below.
+
+top
+
+
+
+2.12 Display the processes running on the system in a tree structure. Write the command you used in the space provided below.
+
+pstree
+
+
+
+
+

@@ -1,0 +1,183 @@
+CIT 112 Hands-on Applicaiton Activity 
+Week 06 
+
+1. Chapter 11. The Environment  
+
+1.1 Display your current working directory using the echo command
+
+echo $PWD
+
+
+1.2 Display all the variables that are set in your current shell, including shell functions
+
+set
+
+
+
+1.3 Display all the exported variables 
+
+export
+
+
+
+1.4 Find the value of the UID variable
+
+id 
+
+
+
+1.5 Create a variable named OS and give it a value of Linux.  Create another variable named DISTRO and give it a value of Ubuntu 
+
+OS="Linux"
+DISTRO="Ubuntu"
+
+
+
+1.6 Create a variable named MYOS and give it a vale of "Ubuntu-Linux" using the OS and DISTRO variables you defined earlier.  Export the MYOS variable.
+
+MYOS=$DISTRO-$OS; export MYOS 
+
+
+
+1.7 Start a child bash process and verify that the MYOS variable has been exported
+
+bash; echo $MYOS
+set
+env
+
+
+
+2. Chapter 12. A gentle introduction to vi 
+
+2.1 run vimtutor ($ vimtutor) on your terminal.  Complete till the end of Lesson 6 by following the instruction in vimtutor.
+
+
+vimtutor
+
+
+1.1 Type <ESC> ______ <ENTER> to quit vim without saving your changes. 
+
+:q!
+
+
+1.2 To delete a character at the cursor, type ______. 
+
+x
+
+
+1.3 Type _____ to enter the insert mode before the cursor 
+
+i
+
+
+1.4 To append text at the end of a line, type ______.
+
+a
+
+
+1.5 Type <ESC> ______ <ENTER> to save the file and quit vim 
+
+:wq
+
+
+2.1 Type _______ to delete a word
+
+dW
+
+2.2 Type ________ to delete from the cursor to the end of a line
+
+d$
+
+
+2.3 Type ______ to move the cursor to the beginning of a line
+
+0
+
+
+2.4 To delete 4 words all at once, type d___w 
+
+4
+
+
+2.5 To delete an entire line, type ___
+
+
+dG
+
+
+2.6 To undo your last command, type ____
+
+
+u
+
+3.1 To paste previously deleted text below the cursor line, type _____
+
+p
+
+
+3.2 To change the word studant to student, place your cursor on the letter a in studant and type __
+
+re
+
+
+3.3 To delete text from the cursor to the end of a line and enter the insert mode, type c____
+
+$
+
+
+4.1 To display the line number at the cursor and status of the file, type CTRL+ ______
+
+
+g
+
+
+4.2 Somewhere in my file I have the word student. To search the file for this word I would type _____ <ENTER>
+
+/student
+
+
+4.3 To find the closing bracket [ I would place my cursor on the opening bracket [ and hit the ____ key
+
+%
+
+
+5.1 To save your vim file by the new name “file1.txt”, type <ESC> ____ file1.txt <ENTER>
+
+:w
+
+
+5.2 To visually mark a block of text (e.g. to export to a new file), type ____ followed by a cursor movement
+
+v
+
+
+5.3 To insert the text from another file into your current file at the cursor position, you will type _____ followed by the filename of the other file.
+
+
+:r
+
+
+6.1 To open a new line above the cursor, type _____
+
+
+O
+
+
+
+6.2 To replace text from the cursor till the <ESC> key is pressed in a line, type _____
+
+R
+
+
+
+6.3 To copy and paste a visually marked block of text, type _____ followed by p
+
+y
+
+
+
+
+
+
+
+
